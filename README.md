@@ -24,16 +24,14 @@ L'application utilise **Django, Bootstrap** pour le style et une base de donnée
 
 ## 📸 Captures d’écran
 
-### 🌍 Page principale : Sélection et conversion
-![Homepage](screenshots/homepage.png)
+### 🌍 Page principale : Création d'utilisateur, sélection et conversion
+![Homepage](Captures/Home.png)
 
 ### 🔥 Résultat d'une conversion
-![Conversion Example](screenshots/conversion.png)
+![Conversion Example](Captures/Resultat.png)
 
 ### 📜 Historique des conversions d'un utilisateur
-![Historique](screenshots/historique.png)
-
-*(Ajoute ces images dans un dossier `/screenshots` dans ton repo pour qu’elles s'affichent correctement.)*
+![Historique](Captures/Historique.png)
 
 ---
 
