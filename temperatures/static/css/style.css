@@ -1,0 +1,23 @@
+/* Ajout de styles spécifiques */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0f67bf;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.btn {
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.container {
+    max-width: 70px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

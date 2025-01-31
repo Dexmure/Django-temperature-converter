@@ -1,0 +1,50 @@
+{% extends "homepage.html" %}
+
+{% block title %}
+   Historique de {{user.username|title}}
+{% endblock  %}
+
+{% block content %} 
+   <h1>
+      Historique pour <span class="badge bg-danger">{{ username|title }}</span>
+   </h1>
+      <div class="lead">
+         <table class="table">
+            <thead>
+               <tr>
+                  <th scope="col">Quand ?</th>
+                  <th scope="col">Valeur initiale</th>
+                  <th scope="col">Valeur finale</th>
+               </tr>
+            </thead>
+
+         <tbody>
+            {% for historique in histories  %}
+               <tr>
+                  <td>{{ historique.time|date:'Y-m-d H:i' }}</td>
+
+                  <td>{% if historique.initial_conv == "F"  %}
+                        <span class="badge bg-secondary">
+                     {% else %}
+                        <span class="badge bg-success">
+                     {% endif %}
+                        {{ historique.val_initial }} ° {{ historique.initial_conv }}</span>
+                  </td>
+
+                  <td>{% if historique.final_conv == "F"  %}
+                        <span class="badge bg-secondary">
+                     {% else %}
+                        <span class="badge bg-success">
+                     {% endif %}
+                        {{ historique.val_final }} ° {{ historique.final_conv }}</span>
+                  </td>
+               </tr>
+            {% endfor %}
+         </tbody>
+         </table>
+      </div>
+
+      <a href="{% url "results" %}" class="btn btn-primary" role="button" >Retour</a>
+
+
+{% endblock  %} 

@@ -1,0 +1,18 @@
+{% extends "homepage.html" %}
+{% block title %}
+   Resultat
+{% endblock  %}
+{% block content %} 
+
+<div class="text-center">
+    <h1 class="mb-4"> Page de Resultat</h1>
+    <p>En convertissant <span class="fw-bold">{{ temp }}</span> <span class="text-primary">{{ conv }}</span>, 
+        on obtient <span class="fw-bold text-success">{{ result }}</span>.</p>
+        <a href="{% url "convert" %}" class="btn btn-primary">Retour</a>
+
+        <a href="{% url "historique" username %}" class="btn btn-success" role="button">Historique</a>
+
+</div>
+
+{% endblock  %} 
+
